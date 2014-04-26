@@ -18,6 +18,16 @@ body {
 @colorSubTxt: #888;
 
 //
+// mixin
+//
+.responsivePadding {
+  @media only screen and (min-device-width : @baseWidth) {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+//
 // layout
 //
 .mknt-l-header {
@@ -53,7 +63,42 @@ body {
 
 // navigation menu
 .mknt-menu {
-  display: none;
+  //display: none;
+  z-index: 999;
+  width: 80%;
+  max-width: 300px;
+  position: fixed;
+  background: rgba(0,0,0,.9);
+  right: 0;
+  top: 0;
+  padding: 40px 20px 20px;
+  height: 100%;
+
+  .mknt-menu__close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: #fff;
+  }
+}
+.mknt-nav {
+  .mknt-nav__item {
+    font-size: 14px;
+    a {
+      color: #aaa;
+      padding: 4px 0px;
+      display: block;
+      transition-property: color;
+      transition-duration: .2s;
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+  .mknt-nav__ref {
+    display: inline-block;
+    min-width: 3em;
+  }
 }
 
 // section
@@ -88,10 +133,11 @@ body {
   }
 }
 
-// modifier
-.mknt-modifier {
-  
-  .mknt-modifier__markup {
+// html block
+.mknt-block {
+  .mknt-block__markup {
+    .responsivePadding;
+    margin-top: 40px;
     padding: 25px;
     background: #f8f8fb;
     border: 1px solid #dedee3;
@@ -108,5 +154,21 @@ body {
       font-family: Consolas,"Liberation Mono",Courier, monospace,"ＭＳ Ｐ ゴシック","MS PGothic","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",sans-serif;
       color: #333;
     }
+  }
+}
+
+// html modifier
+.mknt-modifier {
+  margin-top: 20px;
+  .mknt-modifier__head {
+    font-size: 14px;
+    color: @colorSubTxt;
+    & p {
+      font-size: 14px;
+    }
+  }
+
+  .mknt-modifier__name {
+    margin-bottom: 4px;
   }
 }
