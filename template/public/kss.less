@@ -1,0 +1,112 @@
+// Documentation styles
+// --------------------
+
+body {
+  margin: 0;
+}
+
+// Import rainbow.js highlighter.
+@import "rainbow-github";
+
+//
+// config variables
+//
+// please change $baseWidth for your website
+@baseWidth: 960px;
+
+@colorMainTxt: #333;
+@colorSubTxt: #888;
+
+//
+// layout
+//
+.mknt-l-header {
+  padding: 10px 5%;
+}
+
+.mknt-l-content {
+  clear: both;
+  max-width: @baseWidth;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+.mknt-l-footer {
+
+}
+
+//
+// block
+//
+
+// site id
+.mknt-siteId {
+  float: left;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+// menu button
+.mknt-openMenu {
+  float: right;
+}
+
+// navigation menu
+.mknt-menu {
+  display: none;
+}
+
+// section
+.mknt-section {
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #eee;
+  
+  &.mknt-section--depth1 {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  
+  .mknt-section__title {
+    font-size: 16px;
+    font-weight: bold;
+    color: @colorMainTxt;
+    margin-bottom: 15px;
+    &.mknt-section__title--depth1 {
+      font-size: 14px;
+      font-weight: bold;
+      color: @colorSubTxt;
+      margin-bottom: 30px;
+    }
+  }
+
+  .mknt-section__description {
+    p {
+      font-size: 16px;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+// modifier
+.mknt-modifier {
+  
+  .mknt-modifier__markup {
+    padding: 25px;
+    background: #f8f8fb;
+    border: 1px solid #dedee3;
+
+    pre {
+      font-weight: normal;
+      font-family: Consolas,"Liberation Mono",Courier, monospace,"ＭＳ Ｐ ゴシック","MS PGothic","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",sans-serif;
+      line-height: 1.6;
+      font-size: 14px;
+      color: #333;
+    }
+    code {
+      font-weight: normal;
+      font-family: Consolas,"Liberation Mono",Courier, monospace,"ＭＳ Ｐ ゴシック","MS PGothic","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",sans-serif;
+      color: #333;
+    }
+  }
+}

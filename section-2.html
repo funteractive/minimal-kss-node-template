@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>kss-node Styleguide</title>
+  <meta name="description" content="" />
+  <meta name="generator" content="kss-node" />
+  <!--
+  <link rel="stylesheet" href="public/kss.css" />
+  <link rel="stylesheet" href="public/style.css" />
+  -->
+  <link rel="stylesheet/less" type="text/css" href="template/public/kss.less" />
+  <link rel="stylesheet" href="public/style.css" />
+  <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/1.7.0/less.min.js"></script>
+  <!--[if lt IE 9]>
+  <script src="public/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<body id="mknt">
+<div class="mknt-l-outside">
+  <header class="mknt-l-header">
+    <h1 class="mknt-siteId">STYLE GUIDE</h1>
+    <div class="mknt-openMenu"><a href="#">open</a></div>
+  </header>
+
+  <div class="mknt-menu">
+    <div class="mknt-menu__close"><a href="#">close</a></div>
+    <nav class="mknt-nav">
+      <ul class="mknt-nav__parent" data-kss-ref="2">
+        <li class="mknt-nav__parentItem"><a href="./"><span class="mknt-nav__parentRef">0</span><span class="mknt-nav__parentName">Overview</span></a></li>
+        
+        <li class="mknt-nav__parentItem"><a href="section-1.html"><span class="mknt-nav__parentRef">1</span><span class="mknt-nav__parentName">キャンペーン</span></a></li>
+        
+        <li class="mknt-nav__parentItem"><a href="section-2.html"><span class="mknt-nav__parentRef">2</span><span class="mknt-nav__parentName">ボタン</span></a></li>
+        
+      </ul>
+      
+      <ul class="mknt-nav__child">
+        
+        
+        
+        
+        
+        <li class="mknt-nav__childItem"><a href="#section-2.1"><span class="mknt-nav__childRef">2.1</span><span class="mknt-nav__childRef">ボタン</span></a></li>
+        
+        
+        
+        <li class="mknt-nav__childItem"><a href="#section-2.2"><span class="mknt-nav__childRef">2.2</span><span class="mknt-nav__childRef">ボタングループ</span></a></li>
+        
+        
+      </ul>
+      
+    </nav>
+  </div>
+  <article class="mknt-l-content">
+    
+    
+    <section id="mknt-section-2" class="mknt-section mknt-section--depth1">
+      <h1 class="mknt-section__title mknt-section__title--depth1"><span class="mknt-section__ref">2</span> ボタン</h1>
+      
+      
+      
+    </section>
+    
+    <section id="mknt-section-2.1" class="mknt-section mknt-section--depth2">
+      <h1 class="mknt-section__title mknt-section__title--depth2"><span class="mknt-section__ref">2.1</span> ボタン</h1>
+      
+      
+      <div class="mknt-section__description">
+        <p>ボタンです。</p>
+
+      </div>
+      
+      <div class="mknt-modifier">
+        <div class="mknt-modifier__example">
+          <a href="#" class="button large expand radius {$modifiers}">イベントに参加する</a>
+        </div>
+        
+        <div class="mknt-modifier">
+          <div class="mknt-modifier__head">
+            <div class="mknt-modifier__name">.secondary</div>
+            <div class="mknt-modifier__description">
+              <p>あまり重要ではないボタン</p>
+
+            </div>
+          </div>
+          <div class="mknt-modifier__markupPre">
+            <a href="#" class="button large expand radius secondary">イベントに参加する</a>
+          </div>
+        </div>
+        
+        <div class="mknt-modifier__markup">
+          <pre><code data-language="html">&lt;a href=&quot;#&quot; class=&quot;button large expand radius {$modifiers}&quot;&gt;イベントに参加する&lt;/a&gt;</code></pre>
+        </div>
+      </div>
+      
+    </section>
+    
+    <section id="mknt-section-2.2" class="mknt-section mknt-section--depth2">
+      <h1 class="mknt-section__title mknt-section__title--depth2"><span class="mknt-section__ref">2.2</span> ボタングループ</h1>
+      
+      
+      <div class="mknt-section__description">
+        <p>ボタンが2つ入ります。
+iPad, iPhoneでは縦に並びます。</p>
+
+      </div>
+      
+      <div class="mknt-modifier">
+        <div class="mknt-modifier__example">
+          <div class="btnGroup btnGroup--col2">
+<div class="btnGroup__inner">
+<div class="btnGroup__btnWrap">
+<a href="#" class="button large expand radius secondary">Amazonで購入する</a>
+</div>
+<div class="btnGroup__btnWrap">
+<a href="#" class="button large expand radius">イベントに参加する</a>
+</div>
+</div>
+</div>
+        </div>
+        
+        <div class="mknt-modifier__markup">
+          <pre><code data-language="html">&lt;div class=&quot;btnGroup btnGroup--col2&quot;&gt;
+&lt;div class=&quot;btnGroup__inner&quot;&gt;
+&lt;div class=&quot;btnGroup__btnWrap&quot;&gt;
+&lt;a href=&quot;#&quot; class=&quot;button large expand radius secondary&quot;&gt;Amazonで購入する&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class=&quot;btnGroup__btnWrap&quot;&gt;
+&lt;a href=&quot;#&quot; class=&quot;button large expand radius&quot;&gt;イベントに参加する&lt;/a&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+        </div>
+      </div>
+      
+    </section>
+    
+    
+  </article>
+  <footer class="mknt-l-footer">
+    <div>Created using <a href="https://github.com/hughsk/kss-node">kss-node</a> and <a href="https://github.com/htanjo/kss-node-template">kss-node-template</a>.</div>
+  </footer>
+</div>
+<script src="public/kss.js"></script>
+<script src="public/jquery-1.11.0.min.js"></script>
+<!--[if gt IE 8]><!-->
+<script src="public/rainbow.min.js"></script>
+<!--<![endif]-->
+<script src="public/main.js"></script>
+</body>
+</html>
